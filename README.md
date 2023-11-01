@@ -1,7 +1,7 @@
 # CipherLock-Password-Manager
 This projects aims to allow users to be able to safely input and retrieve their different online account and passwords through the system once it has been registered and saved into the database. The system is created using Tkinter which is a GUI Library that allows me to add in widgets such as buttons, text boxes which users can interact with. The code also uses libraries such as secrets and strings to asssit me in generating values and letters (passcode generation). 
 
-The code first starts off with important the 3 libraries which i have mentioned above which are Tkinter, Secrests and Strings, these three components are key to creating this entire system and looks of the GUI. 
+The code first starts off with important the 3 libraries which i have mentioned above which are Tkinter, Secrets and Strings, these three components are key to creating this entire system and looks of the GUI. i made the system a small widget as i wanted the system to be something that is not too complicated and east to access and that it doesnt fill up the entire home screen. 
 
 Next in the code is the checkin the admin credientials used to login for the user which i have alredy present in this system
 
@@ -41,5 +41,15 @@ it consists of having a password length more than 8 digits, having a upper and l
 
 Once i input my details in, i press the register data button, which then automatically saves the details into a exisitng database file which i named "user_data". this data base updates everytime i register a new account/ information onto the system. The password that is entered is encrypted into the file using my own created cipher for safety and security. this means that when users go into the file, they can only see the encrypted version of the password and not the original password. it is worthy to note that users can edit/delete registered data through the file, this can be useful when they user had updated their password or account name. 
 
-the next button below is the check registered data button, this button aims to retrieve the registered information within the "user_data" file and that users can double check whether they have already registered previously for this account. 
+the next button below is the check registered data button, this button aims to retrieve the registered information within the "user_data" file and that users can double check whether they have already registered previously for this account. if they enter data that has been registered it will show 
+"Username and Password Correct"
+If it hasnt been registered or they enter the wrong details it will show "Invalid username or passwrod. Please try again"
+
+the generate password button is created using the secrets and strings library, it is a function that generates a random password that meets specified criteria for length, uppercase letters, lowercase letters, special characters, and digits.similarly, once user recieves the generated password they are able to register it into the file database. 
+
+As part of security, the passwrod entered into the entry box are all toggled so that it only shows "*", i put in the option for users to "show generated password" so that they are able to see the password generated. it can also be used to see the password they have entered, so that they can make sure they have entered it correctly. 
+
+Finally, the users can retireve their password if they have forgotten it, this function is called "Check registered password for account", users type in the registered account in the top entry box and then they press the button and it will retireve the information by decrypting the password. the decrypted password will show above the show generated password button.
+
+
 
