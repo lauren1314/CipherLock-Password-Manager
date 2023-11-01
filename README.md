@@ -1,2 +1,41 @@
 # CipherLock-Password-Manager
 This projects aims to allow users to be able to safely input and retrieve their different online account and passwords through the system once it has been registered and saved into the database. The system is created using Tkinter which is a GUI Library that allows me to add in widgets such as buttons, text boxes which users can interact with. The code also uses libraries such as secrets and strings to asssit me in generating values and letters (passcode generation). 
+
+The code first starts off with important the 3 libraries which i have mentioned above which are Tkinter, Secrests and Strings, these three components are key to creating this entire system and looks of the GUI. 
+
+Next in the code is the checkin the admin credientials used to login for the user which i have alredy present in this system
+admin_username = "lauren222"
+admin_password = "lauren223"
+The next line makes sure that what is entered in the text box matches the preset credentials and if it does match the user will be able to login and access the other functions of the system. If the credentials entered does not match the presets then it will show "Invalid admin credentials. Please try again with correct details.".
+
+Once the user logs in they will see a new GUI pop up and this is where users are able to register their username and passwords. The GUI has text boxes which allow them to insert the details and have buttons such as "register data", "checked registered data", "generate password", "show generated password" and "check registered password for account". I will go into detail later on for each buttons function. 
+
+now i am going to show you how to use this system and its functions:
+The account username and password entry box is where the user enters their existing username/passwords which they have for their different online accounts eg. facebook, youtube or google account passwords. In this case i will register random details as an example 
+
+lauren456
+lauren1234
+
+As you can see while i type in the password, there is a feedback lable below the entry box that starts to change, this feedback lable is to provide a  strength test to users for their password. the strength test is out of 5, and it is tested based on the complexity which i also created a preset for: 
+
+ if len(password) >= 8:
+        strength_score += 1
+        
+    if any(c in uppercase_letters for c in password):
+        strength_score += 1
+
+    if any(c in lowercase_letters for c in password):
+        strength_score += 1
+
+    if any(c in special_characters for c in password):
+        strength_score += 1
+
+    if any(c in digits for c in password):
+        strength_score += 1
+
+    return strength_score
+
+it consists of having a password length more than 8 digits, having a upper and lower case, special characters and a nubmer. each prerequsitie adds one point. In this case my password only has a strength of 3/5 as i do not have a uppercase or special character. However this does not prevent users from registering their details, it is rather a guideline or recommendation to users. 
+
+Once i input my details in, i press the register data button, which then saves the details into a exisitng database file which i named "user_data". 
+
