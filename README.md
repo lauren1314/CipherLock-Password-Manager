@@ -1,5 +1,7 @@
 # CipherLock-Password-Manager
 This projects aims to allow users to be able to safely input and retrieve their different online account and passwords through the system once it has been registered and saves into the database
+
+
 import tkinter as tk #THIS IS FOR THE GUI LIB
 import secrets #USED FOR CRYPTOGRAPHY DOUBLE SAFETY
 import string 
