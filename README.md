@@ -39,17 +39,14 @@ As you can see while i type in the password, there is a feedback lable below the
 
 it consists of having a password length more than 8 digits, having a upper and lower case, special characters and a nubmer. each prerequsitie adds one point. In this case my password only has a strength of 3/5 as i do not have a uppercase or special character. However this does not prevent users from registering their details, it is rather a guideline or recommendation to users. 
 
-Once i input my details in, i press the register data button, which then automatically saves the details into a exisitng database file which i named "user_data". this data base updates everytime i register a new account/ information onto the system. The password that is entered is encrypted into the file using my own created cipher for safety and security. this means that when users go into the file, they can only see the encrypted version of the password and not the original password. it is worthy to note that users can edit/delete registered data through the file, this can be useful when they user had updated their password or account name. 
+Once i input my details in, i press the register data button, which then automatically saves the details into a exisitng database file which i named "user_data". this data base updates everytime i register a new account/ information onto the system. The password that is entered is encrypted into the file using my own created cipher for safety and security. this means that when users go into the file, they can only see the encrypted version of the password and not the original password. it is worthy to note that users can edit/delete registered data through the file, this can be useful when they user had updated their password or account name. when users try to register the same username the second time, it will show that "the username has been registered already" this helps to prevent double ups.
 
-the next button below is the check registered data button, this button aims to retrieve the registered information within the "user_data" file and that users can double check whether they have already registered previously for this account. if they enter data that has been registered it will show 
-"Username and Password Correct"
-If it hasnt been registered or they enter the wrong details it will show "Invalid username or passwrod. Please try again"
 
 the generate password button is created using the secrets and strings library, it is a function that generates a random password that meets specified criteria for length, uppercase letters, lowercase letters, special characters, and digits.similarly, once user recieves the generated password they are able to register it into the file database. 
 
 As part of security, the passwrod entered into the entry box are all toggled so that it only shows "*", i put in the option for users to "show generated password" so that they are able to see the password generated. it can also be used to see the password they have entered, so that they can make sure they have entered it correctly. 
 
-Finally, the users can retireve their password if they have forgotten it, this function is called "Check registered password for account", users type in the registered account in the top entry box and then they press the button and it will retireve the information by decrypting the password. the decrypted password will show above the show generated password button.
+Finally, the users can retireve their password if they have forgotten it, this function is called "Check registered password for account", users type in the registered account in the top entry box and then they press the button and it will retireve the information by decrypting the password. the decrypted password will show show at the very botton in red bold 12 font letters.
 
 
 
