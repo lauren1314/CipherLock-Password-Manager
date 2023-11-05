@@ -1,12 +1,16 @@
 # CipherLock-Password-Manager
 This projects aims to allow users to be able to safely input and retrieve their different online account and passwords through the system once it has been registered and saved into the database. The system is created using Tkinter which is a GUI Library that allows me to add in widgets such as buttons, text boxes which users can interact with. The code also uses libraries such as secrets and strings to asssit me in generating values and letters (passcode generation). 
 
-The code first starts off with important the 3 libraries which i have mentioned above which are Tkinter, Secrets and Strings, these three components are key to creating this entire system and looks of the GUI. i made the system a small widget as i wanted the system to be something that is not too complicated and east to access and that it doesnt fill up the entire home screen. 
+I will run the code using Python IDLE to show you my system. As you can see i made the system into a small widget as i wanted the system to be something that is not too complicated and easy to access and that it doesnt fill up the entire home screen. 
 
-Next in the code is the checkin the admin credientials used to login for the user which i have alredy present in this system
+this widget you are seeing right now is the  admin login window and this is to help make sure that only ones that have the preset login details are able to access this system for safety and security reasons. in this case i have preset the code so that the login credientials are:
 
 admin_username = "lauren222"
 admin_password = "lauren223"
+
+this can be changed by the user if they want to. 
+
+
 
 The next line makes sure that what is entered in the text box matches the preset credentials and if it does match the user will be able to login and access the other functions of the system. If the credentials entered does not match the presets then it will show "Invalid admin credentials. Please try again with correct details.".
 
