@@ -12,6 +12,5 @@ pip install strings
 
 pip install tk
 
-Please make sure they're at the newest version by typing in
+Please make sure they're at the newest version by typing in:
 pip v
-
