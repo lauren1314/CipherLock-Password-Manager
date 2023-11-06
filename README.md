@@ -7,7 +7,9 @@ After running it, i have used libraries such as Tkinter, Secrets and String whic
 Just incase if it hasnt been downloaded, this is the code
 
 pip install secrets
+
 pip install strings
+
 pip install tk
 
 Please make sure they're at the newest version by typing in
