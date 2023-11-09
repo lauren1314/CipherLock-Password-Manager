@@ -19,3 +19,46 @@ pip v
 
 # user_data.txt
 This is the user_data file which i added into the python code, so that when users register their account and password it gets saved into this file. 
+
+# SOURCE CODE USED
+
+**- ADMIN LOGIN PAGE- **
+SOURCE CODE 
+  
+def login():  
+    username = input("Enter your username: ")  
+    password = input("Enter your password: ")  
+  
+    if username in users and users[username] == password:  
+        print("Login successful!")  
+    else:  
+        print("Invalid username or password. Please try again.")  
+  
+login()  
+Reference-  Jauswal,S. (n.d.). Login Module in Python. JavaTpoint. https://www.javatpoint.com/login-module-in-python
+
+**- Encryption and Decryption of Cipher- **
+Soruce code 
+
+def encrypt(word):
+    encrypted = ''
+    for char in word:
+        if char in crypt:
+            encrypted += crypt[char]
+        else:
+            encrypted += char
+    return encrypted
+Reference- Quercus. (2023). Encrypt/Decrypt code snippet. [Source Code]. Python Community Forum. https://discuss.python.org/t/encrypt-decrypt-with-custom-dictionary/23574
+
+**- Generate password -**
+Source code 
+
+import secrets
+import string
+secure_str = ''.join((secrets.choice(string.ascii_letters) for i in range(8)))
+print(secure_str)
+password = ''.join((secrets.choice(string.ascii_letters + string.digits + string.punctuation) for i in range(8)))
+print(password)
+
+Reference- Hule, A. (2022). Generate Random Strings and Passwords in Python. [Soruce Code]. PYnative Python Programming. https://pynative.com/python-generate-random-string/
+
