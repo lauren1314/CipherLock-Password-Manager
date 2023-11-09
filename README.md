@@ -27,10 +27,13 @@ These are the source code that i used and altered to create my code.
 
 **- ADMIN LOGIN PAGE -**
 SOURCE CODE 
-  
-def login():  
+
+def login(): 
+
     username = input("Enter your username: ")  
+    
     password = input("Enter your password: ")  
+    
   
     if username in users and users[username] == password:  
         print("Login successful!")  
