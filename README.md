@@ -35,7 +35,7 @@ pip v
 # user_data.txt
 This is the user_data file which i added into the python code, so that when users register their account and password it gets saved into this file. 
 
-# SOURCE CODE REFERENCES
+# SOURCE CODES
 
 These are the source code that i used and altered to create my code.
 
@@ -223,8 +223,22 @@ This is the webstie where i found out how to save and read files using the Strip
 
 Kutaj, P. (2021). Strip And Split Read Lines In Python To Parse Config Files Effectively [Source Code]. Medium. https://pavolkutaj.medium.com/strip-and-split-read-lines-in-python-to-parse-config-files-effectivelly-df903966ecd4
 
-
 **-Tkinter-**
 This is the webstie where i learnt how to use Tkinter to create my GUI
+
+Python. (2023). tkinter — Python interface to Tcl/Tk. (Version 3.12.0) [Source Code]. Python. https://docs.python.org/3/library/tkinter.html
+
+**#Referencences **
+
+CodeVisionz (2023). Python Code Example: check password strength. [Source Code]. CodeVisionz. https://codevisionz.com/lessons/python-check-password-strength/
+
+Hule, A. (2022). Generate Random Strings and Passwords in Python. [Soruce Code]. PYnative Python Programming. https://pynative.com/python-generate-random-string/
+
+Jauswal,S. (n.d.). Login Module in Python. JavaTpoint. https://www.javatpoint.com/login-module-in-python
+
+Kutaj, P. (2021). Strip And Split Read Lines In Python To Parse Config Files Effectively [Source Code]. Medium. https://pavolkutaj.medium.com/strip-and-split-read-lines-in-python-to-parse-config-files-effectivelly-df903966ecd4
+
+
+Quercus. (2023). Encrypt/Decrypt code snippet. [Source Code]. Python Community Forum. https://discuss.python.org/t/encrypt-decrypt-with-custom-dictionary/23574
 
 Python. (2023). tkinter — Python interface to Tcl/Tk. (Version 3.12.0) [Source Code]. Python. https://docs.python.org/3/library/tkinter.html
