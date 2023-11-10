@@ -1,5 +1,19 @@
 # CipherLock-Password-Manager
-This projects aims to allow users to be able to safely input and retrieve their different online account and passwords through the system once it has been registered and saved into the database. The system is created using Tkinter which is a GUI Library that allows me to add in widgets such as buttons, text boxes which users can interact with. The code also uses libraries such as secrets and strings to asssit me in generating values and letters (passcode generation). 
+This projects aims to allow users to be able to safely input and retrieve their different online account and passwords through the system once it has been registered and saved into the database. The system is created using Tkinter which is a GUI Library that allows me to add in widgets such as buttons, text boxes which users can interact with. The code also uses libraries such as secrets and strings to asssit me in generating values and letters (passcode generation). The system has 4 main functions:
+
+- Register account and password details
+The user can enter their online account and passwords into the entry box and save it into a user database. The password saved gets encrypted so that even if someone gets access to the save data they are unable to see the original password. this creates double security for the user
+
+- Password strength checker
+When users type in their password, the system automatically runs the password through a password strength test out of /5. The password strength tests where the password has
+1 upper case, lower case, special character, number and over 8 characters. This is made to provide guidance for the user
+
+- Password Generator
+If user needs assistance in generating a strong password they are able to use the Generate Password function. THe password generator makes sure that their is 8+ characters and has one upper case, lower case, number and special character inside it.
+
+- Password Retrieval
+if the user forgets their password or wants to check what password they saved for their account, they are able to retrieve it by entering their registered account username into the entry boxx at the top and press the retrieve registered password button. The encrypted password will then be decrpyted from the database and shown at the botton of the window in red bold letters.
+
 
 # A3 CipherLock Password Manager 14251476.py
 This is the code for my Python System which i have created. This needs to be opened/run using Python IDLE
@@ -8,11 +22,13 @@ This is the code for my Python System which i have created. This needs to be ope
 After running it, i have used libraries such as Tkinter, Secrets and String which should be downloaded within the Python Library System already.
 Just incase if it hasnt been downloaded, this is the code
 
-pip install secrets
+ pip install secrets
+ 
 
-pip install string
+ pip install string
+ 
 
-pip install tk 
+ pip install tk 
 
 
 Please make sure they're at the newest version by typing in:
@@ -86,7 +102,9 @@ Reference- Hule, A. (2022). Generate Random Strings and Passwords in Python. [So
 **- Password Strength Test -**
 
 def checkPassword(password):
+
     upperChars, lowerChars, specialChars, digits, length = 0, 0, 0, 0, 0
+    
     length = len(password)
 
     if (length < 6):
