@@ -37,7 +37,7 @@ pip v
 # user_data.txt
 This is the user_data file which i added into the python code, so that when users register their account and password it gets saved into this file. 
 
-# SOURCE CODE USED
+# SOURCE CODE REFERENCES
 
 These are the source code that i used and altered to create my code.
 
