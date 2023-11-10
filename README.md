@@ -228,7 +228,7 @@ This is the webstie where i learnt how to use Tkinter to create my GUI
 
 Python. (2023). tkinter — Python interface to Tcl/Tk. (Version 3.12.0) [Source Code]. Python. https://docs.python.org/3/library/tkinter.html
 
-**#Referencences **
+# Referencences
 
 CodeVisionz (2023). Python Code Example: check password strength. [Source Code]. CodeVisionz. https://codevisionz.com/lessons/python-check-password-strength/
 
