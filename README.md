@@ -2,7 +2,7 @@
 This projects aims to allow users to be able to safely input and retrieve their different online account and passwords through the system once it has been registered and saved into the database. The system is created using Tkinter which is a GUI Library that allows me to add in widgets such as buttons, text boxes which users can interact with. The code also uses libraries such as secrets and strings to asssit me in generating values and letters (passcode generation). The system has 4 main functions:
 
 - Register account and password details
-The user can enter their online account and passwords into the entry box and save it into a user database. The password saved gets encrypted so that even if someone gets access to the save data they are unable to see the original password. this creates double security for the user
+The user can enter their online account and passwords into the entry box and save it into a user database. The password saved gets encrypted so that even if someone gets access to the save data they are unable to see the original password. this creates double security for the user. The database automatically creates a file into the users dekstop, so there is no need for the user to create a file themselves. Users can also edit the database by removing their saved data if they do wish to update their account details. 
 
 - Password strength checker
 When users type in their password, the system automatically runs the password through a password strength test out of /5. The password strength tests where the password has
