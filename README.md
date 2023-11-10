@@ -224,6 +224,7 @@ This is the webstie where i found out how to save and read files using the Strip
 Kutaj, P. (2021). Strip And Split Read Lines In Python To Parse Config Files Effectively [Source Code]. Medium. https://pavolkutaj.medium.com/strip-and-split-read-lines-in-python-to-parse-config-files-effectivelly-df903966ecd4
 
 **-Tkinter-**
+
 This is the webstie where i learnt how to use Tkinter to create my GUI
 
 Python. (2023). tkinter — Python interface to Tcl/Tk. (Version 3.12.0) [Source Code]. Python. https://docs.python.org/3/library/tkinter.html
