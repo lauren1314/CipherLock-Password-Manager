@@ -22,13 +22,13 @@ This is the code for my Python System which i have created. This needs to be ope
 After running it, i have used libraries such as Tkinter, Secrets and String which should be downloaded within the Python Library System already.
 Just incase if it hasnt been downloaded, this is the code
 
- pip install secrets
+1. pip install secrets
  
 
- pip install string
+2. pip install string
  
 
- pip install tk 
+3. pip install tk 
 
 
 Please make sure they're at the newest version by typing in:
