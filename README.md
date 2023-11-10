@@ -56,7 +56,7 @@ Source code
 
       print(password)
 
-Reference- Hule, A. (2022). Generate Random Strings and Passwords in Python. [Soruce Code]. PYnative Python Programming. https://pynative.com/python-generate-random-string/
+Reference- Hule, A. (2022). Generate Random Strings and Passwords in Python. (Version 3.12.0). [Soruce Code]. PYnative Python Programming. https://pynative.com/python-generate-random-string/
 
 My altered code
 
@@ -233,7 +233,7 @@ Python. (2023). tkinter — Python interface to Tcl/Tk. (Version 3.12.0) [Source
 
 CodeVisionz (2023). Python Code Example: check password strength. [Source Code]. CodeVisionz. https://codevisionz.com/lessons/python-check-password-strength/
 
-Hule, A. (2022). Generate Random Strings and Passwords in Python. [Soruce Code]. PYnative Python Programming. https://pynative.com/python-generate-random-string/
+Hule, A. (2022). Generate Random Strings and Passwords in Python. (Version 3.12.0). [Soruce Code]. PYnative Python Programming. https://pynative.com/python-generate-random-string/
 
 Jauswal,S. (n.d.). Login Module in Python. JavaTpoint. https://www.javatpoint.com/login-module-in-python
 
