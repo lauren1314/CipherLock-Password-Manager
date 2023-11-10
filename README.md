@@ -41,6 +41,25 @@ This is the user_data file which i added into the python code, so that when user
 
 These are the source code that i used and altered to create my code.
 
+
+**- Generate password -**
+
+Source code 
+
+import secrets 
+
+import string
+
+   secure_str = ''.join((secrets.choice(string.ascii_letters) for i in range(8)))
+
+   print(secure_str)
+
+   password = ''.join((secrets.choice(string.ascii_letters + string.digits + string.punctuation) for i in range(8)))
+
+   print(password)
+
+Reference- Hule, A. (2022). Generate Random Strings and Passwords in Python. [Soruce Code]. PYnative Python Programming. https://pynative.com/python-generate-random-string/
+
 **- ADMIN LOGIN PAGE -**
 SOURCE CODE 
 
@@ -58,46 +77,6 @@ def login():
         login() 
   
 Reference-  Jauswal,S. (n.d.). Login Module in Python. JavaTpoint. https://www.javatpoint.com/login-module-in-python
-
-**- Encryption and Decryption of Cipher -**
-
-Source code 
-
-def encrypt(word):
-   
-    encrypted = ''
-    
-    for char in word:
-        
-        if char in crypt:
-            
-            encrypted += crypt[char]
-       
-        else:
-           
-            encrypted += char
-    
-    return encrypted
-    
-Reference- Quercus. (2023). Encrypt/Decrypt code snippet. [Source Code]. Python Community Forum. https://discuss.python.org/t/encrypt-decrypt-with-custom-dictionary/23574
-
-**- Generate password -**
-
-Source code 
-
-import secrets
-
-import string
-
-   secure_str = ''.join((secrets.choice(string.ascii_letters) for i in range(8)))
-
-   print(secure_str)
-
-   password = ''.join((secrets.choice(string.ascii_letters + string.digits + string.punctuation) for i in range(8)))
-
-   print(password)
-
-Reference- Hule, A. (2022). Generate Random Strings and Passwords in Python. [Soruce Code]. PYnative Python Programming. https://pynative.com/python-generate-random-string/
 
 **- Password Strength Test -**
 
@@ -138,6 +117,27 @@ def checkPassword(password):
 
 Reference - (2023). Python Code Example: check password strength. [Source Code]. CodeVisionz. https://codevisionz.com/lessons/python-check-password-strength/
 
+**- Encryption and Decryption of Cipher -**
+
+Source code 
+
+def encrypt(word):
+   
+    encrypted = ''
+    
+    for char in word:
+        
+        if char in crypt:
+            
+            encrypted += crypt[char]
+       
+        else:
+           
+            encrypted += char
+    
+    return encrypted
+    
+Reference- Quercus. (2023). Encrypt/Decrypt code snippet. [Source Code]. Python Community Forum. https://discuss.python.org/t/encrypt-decrypt-with-custom-dictionary/23574
 
 **- Saving and Reading Files -**
 
