@@ -22,13 +22,11 @@ This is the code for my Python System which i have created. This needs to be ope
 After running it, i have used libraries such as Tkinter, Secrets and String which should be downloaded within the Python Library System already.
 Just incase if it hasnt been downloaded, this is the code
 
-1. pip install secrets
+    pip install secrets
  
-
-2. pip install string
+    pip install string
  
-
-3. pip install tk 
+    pip install tk 
 
 
 Please make sure they're at the newest version by typing in:
@@ -46,24 +44,43 @@ These are the source code that i used and altered to create my code.
 
 Source code 
 
-import secrets 
+    import secrets 
 
-import string
+    import string
 
-   secure_str = ''.join((secrets.choice(string.ascii_letters) for i in range(8)))
+      secure_str = ''.join((secrets.choice(string.ascii_letters) for i in range(8)))
 
-   print(secure_str)
+      print(secure_str)
 
-   password = ''.join((secrets.choice(string.ascii_letters + string.digits + string.punctuation) for i in range(8)))
+      password = ''.join((secrets.choice(string.ascii_letters + string.digits + string.punctuation) for i in range(8)))
 
-   print(password)
+      print(password)
 
 Reference- Hule, A. (2022). Generate Random Strings and Passwords in Python. [Soruce Code]. PYnative Python Programming. https://pynative.com/python-generate-random-string/
 
+My altered code
+
+    def generate_random_password():
+    uppercase_letters = string.ascii_uppercase
+    lowercase_letters = string.ascii_lowercase
+    special_characters = "!@#$%^&*?"
+    digits = string.digits
+    
+
+    while True:
+        password = ''.join(secrets.choice(uppercase_letters) for _ in range(1))
+        password += ''.join(secrets.choice(lowercase_letters) for _ in range(1))
+        password += ''.join(secrets.choice(special_characters) for _ in range(1))
+        password += ''.join(secrets.choice(digits) for _ in range(1))
+        password += ''.join(secrets.choice(uppercase_letters + lowercase_letters + special_characters + digits) for _ in range(6))
+
+        if calculate_password_strength(password) == 5:
+            return password
+            
 **- ADMIN LOGIN PAGE -**
 SOURCE CODE 
 
-def login(): 
+    def login(): 
 
     username = input("Enter your username: ")  
     
@@ -78,9 +95,30 @@ def login():
   
 Reference-  Jauswal,S. (n.d.). Login Module in Python. JavaTpoint. https://www.javatpoint.com/login-module-in-python
 
+
+My altered code
+
+    def check_admin_credentials():
+
+    entered_username = admin_username_entry.get() 
+    
+    entered_password = admin_password_entry.get()
+    
+    admin_username = "lauren222"
+    
+    admin_password = "lauren223"
+
+    if entered_username == admin_username and entered_password == admin_password:
+        admin_login_window.destroy()
+         
+    else:
+       admin_feedback_label.config(text="Invalid admin credentials. Please try again with correct details.")
+
+
+
 **- Password Strength Test -**
 
-def checkPassword(password):
+    def checkPassword(password):
 
     upperChars, lowerChars, specialChars, digits, length = 0, 0, 0, 0, 0
     
@@ -117,11 +155,38 @@ def checkPassword(password):
 
 Reference - (2023). Python Code Example: check password strength. [Source Code]. CodeVisionz. https://codevisionz.com/lessons/python-check-password-strength/
 
+My Altered code
+
+    def calculate_password_strength(password):
+    uppercase_letters = set(string.ascii_uppercase)
+    lowercase_letters = set(string.ascii_lowercase)
+    special_characters = set("!@#$%^&*?")
+    digits = set(string.digits)
+
+    strength_score = 0
+
+    if len(password) >= 8:
+        strength_score += 1
+        
+    if any(c in uppercase_letters for c in password):
+        strength_score += 1
+
+    if any(c in lowercase_letters for c in password):
+        strength_score += 1
+
+    if any(c in special_characters for c in password):
+        strength_score += 1
+
+    if any(c in digits for c in password):
+        strength_score += 1
+
+    return strength_score
+
 **- Encryption and Decryption of Cipher -**
 
 Source code 
 
-def encrypt(word):
+    def encrypt(word):
    
     encrypted = ''
     
@@ -139,6 +204,19 @@ def encrypt(word):
     
 Reference- Quercus. (2023). Encrypt/Decrypt code snippet. [Source Code]. Python Community Forum. https://discuss.python.org/t/encrypt-decrypt-with-custom-dictionary/23574
 
+My altered code
+
+
+    def custom_cipher_encrypt(text):
+    encrypted_text = ''
+    for char in text:
+        if char in decrypt_cipher:
+            index = decrypt_cipher.index(char)
+            encrypted_text += encrypt_cipher[index]
+        else:
+            encrypted_text += char
+    return encrypted_text
+    
 **- Saving and Reading Files -**
 
 This is the webstie where i found out how to save and read files using the Strip and Split Lines. 
@@ -146,4 +224,7 @@ This is the webstie where i found out how to save and read files using the Strip
 Kutaj, P. (2021). Strip And Split Read Lines In Python To Parse Config Files Effectively [Source Code]. Medium. https://pavolkutaj.medium.com/strip-and-split-read-lines-in-python-to-parse-config-files-effectivelly-df903966ecd4
 
 
+**-Tkinter-**
+This is the webstie where i learnt how to use Tkinter to create my GUI
 
+Python. (2023). tkinter — Python interface to Tcl/Tk. (Version 3.12.0) [Source Code]. Python. https://docs.python.org/3/library/tkinter.html
